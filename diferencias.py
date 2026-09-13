@@ -1,10 +1,13 @@
+import cv2
 import numpy as np
-import matplotlib.pyplot as plt
-import scipy as spy # optimización y ajuste de curvas, procesamiento de imagenes, AL avanzada, estadística, integración y EDOs.
-from skimage import io # procesamiento de imágenes digitales. 
 
-salon = io.imread('imagen_salon.png')
+# primer punto
+M1 = cv2.imread('left.png')
+M2 = cv2.imread('right.png')
 
-print(salon.shape)
-plt.imshow(salon)
+diff = np.abs(np.round(M1/2) - np.round(M2/2))
+diff = diff.astype(np.uint8)
 
+cv2.imwrite('diferencia.png', diff)
+
+# segundo punto
