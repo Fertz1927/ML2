@@ -1,4 +1,4 @@
-```mermaid [
+```mermaid 
 
 graph TD
     A[Manipulación de Imágenes mediante Matrices] --> B[1. Representación Matricial]
@@ -35,5 +35,6 @@ graph TD
     style A fill:#1f618d,stroke:#154360,stroke-width:2px,color:#fff
     style B fill:#2874a6,stroke:#1b4f72,color:#fff
     style C fill:#2874a6,stroke:#1b4f72,color:#fff
-    style D fill:#2874a6,stroke:#1b4f72,color:#fff ]
-    
+    style D fill:#2874a6,stroke:#1b4f72,color:#fff 
+    ```
+
